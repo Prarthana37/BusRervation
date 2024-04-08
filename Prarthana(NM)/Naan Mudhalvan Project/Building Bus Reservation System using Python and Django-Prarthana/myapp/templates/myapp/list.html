@@ -3,22 +3,22 @@
     <h3>{{msg}}</h3>
     <div class="card rounded-0 mb-5">
         <div class="card-header">
-            <div class="card-title h3 mb-0" style="color: E0E0E0;">List of Scheduled Busses</div>
+            <div class="card-title h3 mb-0" style="color: #E0E0E0;">List of Scheduled Busses</div>
         </div>
         <div class="card-body">
             <div class="container-fluid">
                 <table class="table table-bordered table-striped">
                     <thead>
                         <tr class="bg-gradient bg-primary text-light">
-                            <th class="p-1 text-center" style="color: E0E0E0;">ID</th>
-                            <th class="p-1 text-center" style="color: E0E0E0;">NAME</th>
-                            <th class="p-1 text-center" style="color: E0E0E0;">SOURCE</th>
-                            <th class="p-1 text-center" style="color: E0E0E0;">DESTINATION</th>
-                            <th class="p-1 text-center" style="color: E0E0E0;">NUM OF SEATS</th>
-                            <th class="p-1 text-center" style="color: E0E0E0;">NUM OF SEATS REM</th>
-                            <th class="p-1 text-center" style="color: E0E0E0;">PRICE</th>
-                            <th class="p-1 text-center" style="color: E0E0E0;">DATE</th>
-                            <th class="p-1 text-center" style="color: E0E0E0;">TIME</th>
+                            <th class="p-1 text-center" style="color: #E0E0E0;">ID</th>
+                            <th class="p-1 text-center" style="color: #E0E0E0;">NAME</th>
+                            <th class="p-1 text-center" style="color: #E0E0E0;">SOURCE</th>
+                            <th class="p-1 text-center" style="color: #E0E0E0;">DESTINATION</th>
+                            <th class="p-1 text-center" style="color: #E0E0E0;">NUM OF SEATS</th>
+                            <th class="p-1 text-center" style="color: #E0E0E0;">NUM OF SEATS REM</th>
+                            <th class="p-1 text-center" style="color: #E0E0E0;">PRICE</th>
+                            <th class="p-1 text-center" style="color: #E0E0E0;">DATE</th>
+                            <th class="p-1 text-center" style="color: #E0E0E0;">TIME</th>
                         </tr>
                     </thead>
 
@@ -45,19 +45,19 @@
         <div class="col-lg-6 col-md-8 col-sm-10 col-xs-12">
             <div class="card rounded-0">
                 <div class="card-header">
-                    <div class="card-title h3 mb-3" style="color: E0E0E0;">Booking Form</div>
+                    <div class="card-title h3 mb-3" style="color: #E0E0E0;">Booking Form</div>
                 </div>
                 <div class="card-body">
                     <div class="container-fluid">
                         <form action="{% url 'bookings' %}" method="post" id="book-form">
-                            <h3 style="color: E0E0E0;">Choose bus to book</h3>
+                            <h3 style="color: #E0E0E0;">Choose bus to book</h3>
                             {% csrf_token %}
                             <div class="mb-3">
-                                <label for="bus_id" class="control-label" style="color: E0E0E0;">Enter Bus ID</label>
+                                <label for="bus_id" class="control-label" style="color: #E0E0E0;">Enter Bus ID</label>
                                 <input name='bus_id' class="form-control rounded-0" type="number" id="bus_id">
                             </div>
                             <div class="mb-3">
-                                <label for="no_seats" class="control-label" style="color: E0E0E0;">Number of Seat/s</label>
+                                <label for="no_seats" class="control-label" style="color: #E0E0E0;">Number of Seat/s</label>
                                 <input name='no_seats' class="form-control rounded-0" id="no_seats" type="number">
                             </div>
                             {% if error %}
@@ -69,7 +69,7 @@
                     </div>
                 </div>
                 <div class="card-footer text-center">
-                    <button class="btn btn-sm rounded-0 btn-primary w-100" form="book-form" style="color: E0E0E0;background-color: black;">Book Now</button>
+                    <button class="btn btn-sm rounded-0 btn-primary w-100" form="book-form" style="color: #E0E0E0;background-color: black;">Book Now</button>
                 </div>
             </div>
         </div>
