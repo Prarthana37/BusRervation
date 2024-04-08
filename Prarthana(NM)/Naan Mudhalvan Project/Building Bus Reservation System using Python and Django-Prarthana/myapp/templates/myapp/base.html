@@ -24,20 +24,20 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-gradient bg-light">
     <div class="container">
-            <a class="navbar-brand" href="#" style="color: E0E0E0;font-weight:bold">Bus Reservation System</a>
+            <a class="navbar-brand" href="#" style="color: #E0E0E0;font-weight:bold">Bus Reservation System</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav" >
-                <a class="nav-item nav-link active" href="{% url 'home' %}" style="color: E0E0E0;">Home/Login</a>
-                <a class="nav-item nav-link" href="{% url 'findbus' %}" style="color: E0E0E0;">Find Bus</a>
-                <a class="nav-item nav-link" href="{% url 'seebookings' %}" style="color: E0E0E0;">See Bookings</a>
+                <a class="nav-item nav-link active" href="{% url 'home' %}" style="color: #E0E0E0;">Home/Login</a>
+                <a class="nav-item nav-link" href="{% url 'findbus' %}" style="color: #E0E0E0;">Find Bus</a>
+                <a class="nav-item nav-link" href="{% url 'seebookings' %}" style="color: #E0E0E0;">See Bookings</a>
                 {% if request.user.is_active %}
-                <a class="nav-item nav-link " href="{% url 'signout' %}" style="color: E0E0E0;">Logout</a>
+                <a class="nav-item nav-link " href="{% url 'signout' %}" style="color: #E0E0E0;">Logout</a>
                 {% else %}
-                <a class="nav-item nav-link " href="{% url 'signup' %}" style="color: E0E0E0;">Registration</a>
+                <a class="nav-item nav-link " href="{% url 'signup' %}" style="color: #E0E0E0;">Registration</a>
                 {% endif %}
 
 
